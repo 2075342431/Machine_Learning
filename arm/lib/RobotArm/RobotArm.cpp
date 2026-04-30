@@ -80,9 +80,9 @@ uint16_t RobotArm::radToPWM(float rad, bool reverse) {
 void RobotArm::setJoints(const double* rads, size_t size) {
     if (size >= 4) {
         base_servo.writeMicroseconds(radToPWM(rads[0], true));
-        sts_bus2.WritePosEx(15, radToSTS(rads[1], false), 1000, 30);
-        sts_bus1.WritePosEx(12, radToSTS(rads[2], false), 1000, 30);
-        sts_bus2.WritePosEx(14, radToSTS(rads[3], false), 1000, 30); 
+        sts_bus2.WritePosEx(15, radToSTS(rads[1], false), 2000, 100);
+        sts_bus1.WritePosEx(12, radToSTS(rads[2], false), 2000, 100);
+        sts_bus2.WritePosEx(14, radToSTS(rads[3], false), 2000, 100); 
     }
 }
 
