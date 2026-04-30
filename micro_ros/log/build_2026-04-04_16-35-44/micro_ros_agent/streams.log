@@ -1,0 +1,321 @@
+[0.008s] Invoking command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kk/Desktop/fishbot_ws/src/micro-ROS-Agent/micro_ros_agent -DCMAKE_INSTALL_PREFIX=/home/kk/Desktop/fishbot_ws/install/micro_ros_agent
+[0.058s] -- The C compiler identification is GNU 11.4.0
+[0.066s] -- Detecting C compiler ABI info
+[0.129s] -- Detecting C compiler ABI info - done
+[0.134s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.134s] -- Detecting C compile features
+[0.135s] -- Detecting C compile features - done
+[0.179s] -- The CXX compiler identification is GNU 11.4.0
+[0.184s] -- Detecting CXX compiler ABI info
+[0.256s] -- Detecting CXX compiler ABI info - done
+[0.262s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.262s] -- Detecting CXX compile features
+[0.262s] -- Detecting CXX compile features - done
+[0.288s] -- Configuring done
+[0.292s] -- Generating done
+[0.293s] -- Build files have been written to: /home/kk/Desktop/fishbot_ws/build/micro_ros_agent
+[0.297s] Invoked command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kk/Desktop/fishbot_ws/src/micro-ROS-Agent/micro_ros_agent -DCMAKE_INSTALL_PREFIX=/home/kk/Desktop/fishbot_ws/install/micro_ros_agent
+[0.298s] Invoking command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kk/Desktop/fishbot_ws/build/micro_ros_agent -- -j16 -l16
+[0.344s] [  6%] [34m[1mCreating directories for 'xrceagent'[0m
+[0.406s] [ 12%] [34m[1mPerforming download step (git clone) for 'xrceagent'[0m
+[0.427s] 正克隆到 'xrceagent'...
+[5.321s] HEAD 目前位于 57d0862 Release v2.4.2
+[5.378s] [ 18%] [34m[1mPerforming update step for 'xrceagent'[0m
+[5.402s] [ 25%] [34m[1mNo patch step for 'xrceagent'[0m
+[5.428s] [ 31%] [34m[1mPerforming configure step for 'xrceagent'[0m
+[5.437s] loading initial cache file /home/kk/Desktop/fishbot_ws/build/micro_ros_agent/agent/tmp/xrceagent-cache-.cmake
+[5.481s] -- The C compiler identification is GNU 11.4.0
+[5.490s] -- Detecting C compiler ABI info
+[5.549s] -- Detecting C compiler ABI info - done
+[5.555s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.555s] -- Detecting C compile features
+[5.555s] -- Detecting C compile features - done
+[5.604s] -- The CXX compiler identification is GNU 11.4.0
+[5.611s] -- Detecting CXX compiler ABI info
+[5.684s] -- Detecting CXX compiler ABI info - done
+[5.689s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.690s] -- Detecting CXX compile features
+[5.690s] -- Detecting CXX compile features - done
+[5.695s] -- Looking for pthread.h
+[5.764s] -- Looking for pthread.h - found
+[5.764s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.834s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.835s] -- Found Threads: TRUE  
+[5.846s] -- Configuring done
+[5.848s] -- Generating done
+[5.849s] -- Build files have been written to: /home/kk/Desktop/fishbot_ws/build/micro_ros_agent/agent/src/xrceagent-build
+[5.869s] [ 37%] [34m[1mPerforming build step for 'xrceagent'[0m
+[5.907s] [ 12%] [34m[1mCreating directories for 'uagent'[0m
+[5.974s] [ 25%] [34m[1mNo download step for 'uagent'[0m
+[5.994s] [ 37%] [34m[1mNo update step for 'uagent'[0m
+[6.018s] [ 50%] [34m[1mNo patch step for 'uagent'[0m
+[6.040s] [ 62%] [34m[1mPerforming configure step for 'uagent'[0m
+[6.047s] loading initial cache file /home/kk/Desktop/fishbot_ws/build/micro_ros_agent/agent/src/xrceagent-build/uagent-prefix/tmp/uagent-cache-.cmake
+[6.051s] -- Setting build type to 'Release' as none was specified.
+[6.079s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[6.079s]   The package name passed to `find_package_handle_standard_args` (tinyxml2)
+[6.079s]   does not match the name of the calling package (TinyXML2).  This can lead
+[6.079s]   to problems in calling code that expects `find_package` result variables
+[6.079s]   (e.g., `_FOUND`) to follow a certain pattern.
+[6.079s] Call Stack (most recent call first):
+[6.079s]   cmake/modules/FindTinyXML2.cmake:40 (find_package_handle_standard_args)
+[6.080s]   /opt/ros/humble/share/fastrtps/cmake/fastrtps-config.cmake:51 (find_package)
+[6.080s]   CMakeLists.txt:153 (find_package)
+[6.080s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[6.080s] [0m
+[6.080s] -- Found tinyxml2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+[6.134s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.141s] -- Configuring done
+[6.150s] -- Generating done
+[6.150s] -- Build files have been written to: /home/kk/Desktop/fishbot_ws/build/micro_ros_agent/agent/src/xrceagent-build
+[6.168s] [ 75%] [34m[1mPerforming build step for 'uagent'[0m
+[6.210s] [  9%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Root.cpp.o[0m
+[6.211s] [  9%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/AgentInstance.cpp.o[0m
+[6.211s] [  9%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/participant/Participant.cpp.o[0m
+[6.211s] [  9%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/client/ProxyClient.cpp.o[0m
+[6.211s] [ 14%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Agent.cpp.o[0m
+[6.211s] [ 23%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/subscriber/Subscriber.cpp.o[0m
+[6.211s] [ 23%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/topic/Topic.cpp.o[0m
+[6.211s] [ 23%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/processor/Processor.cpp.o[0m
+[6.211s] [ 23%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/publisher/Publisher.cpp.o[0m
+[6.211s] [ 23%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datawriter/DataWriter.cpp.o[0m
+[6.211s] [ 28%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datareader/DataReader.cpp.o[0m
+[6.211s] [ 28%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/replier/Replier.cpp.o[0m
+[6.211s] [ 30%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/requester/Requester.cpp.o[0m
+[6.211s] [ 33%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/XRCETypes.cpp.o[0m
+[6.214s] [ 35%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/object/XRCEObject.cpp.o[0m
+[6.215s] [ 38%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/MessageHeader.cpp.o[0m
+[6.889s] [ 40%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/SubMessageHeader.cpp.o[0m
+[7.055s] [ 42%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/InputMessage.cpp.o[0m
+[7.579s] [ 45%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/OutputMessage.cpp.o[0m
+[7.657s] [ 47%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/utils/ArgumentParser.cpp.o[0m
+[7.683s] [ 50%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/Server.cpp.o[0m
+[7.732s] [ 52%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp.o[0m
+[7.763s] [ 54%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/custom/CustomAgent.cpp.o[0m
+[8.098s] [ 57%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv4AgentLinux.cpp.o[0m
+[9.855s] [ 59%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv6AgentLinux.cpp.o[0m
+[10.606s] [ 61%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv4AgentLinux.cpp.o[0m
+[10.611s] [ 64%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv6AgentLinux.cpp.o[0m
+[10.720s] [ 66%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/SerialAgentLinux.cpp.o[0m
+[10.811s] [ 69%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/TermiosAgentLinux.cpp.o[0m
+[10.982s] [ 71%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiSerialAgentLinux.cpp.o[0m
+[11.510s] [ 73%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiTermiosAgentLinux.cpp.o[0m
+[11.607s] [ 76%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/PseudoTerminalAgentLinux.cpp.o[0m
+[11.629s] [ 78%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/can/CanAgentLinux.cpp.o[0m
+[12.285s] [ 80%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServerLinux.cpp.o[0m
+[12.975s] [ 83%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServer.cpp.o[0m
+[13.211s] [ 85%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/TopicPubSubType.cpp.o[0m
+[13.933s] [ 88%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/xmlobjects/xmlobjects.cpp.o[0m
+[14.439s] [ 90%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastEntities.cpp.o[0m
+[14.635s] [ 92%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastMiddleware.cpp.o[0m
+[14.916s] [ 95%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSEntities.cpp.o[0m
+[15.033s] [ 97%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSMiddleware.cpp.o[0m
+[20.457s] [100%] [32m[1mLinking CXX shared library libmicroxrcedds_agent.so[0m
+[20.717s] [100%] Built target microxrcedds_agent
+[20.741s] [34m[1mNo install step for 'uagent'[0m
+[20.763s] [34m[1mCompleted 'uagent'[0m
+[20.791s] Built target uagent
+[20.813s] [ 43%] [34m[1mPerforming install step for 'xrceagent'[0m
+[20.854s] [35m[1mConsolidate compiler generated dependencies of target microxrcedds_agent[0m
+[20.913s] [100%] Built target microxrcedds_agent
+[20.931s] [36mInstall the project...[0m
+[20.938s] -- Install configuration: "Release"
+[20.939s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.2
+[20.942s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4
+[20.942s] -- Set runtime path of "/home/kk/Desktop/fishbot_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.2" to ""
+[20.943s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so
+[20.943s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent
+[20.943s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/publisher
+[20.943s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/publisher/Publisher.hpp
+[20.943s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/p2p
+[20.943s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClientManager.hpp
+[20.943s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClient.hpp
+[20.943s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/topic
+[20.943s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/topic/Topic.hpp
+[20.943s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/datareader
+[20.943s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/datareader/DataReader.hpp
+[20.944s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/AgentInstance.hpp
+[20.944s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/Agent.hpp
+[20.944s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/scheduler
+[20.944s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/scheduler/PacketScheduler.hpp
+[20.944s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/scheduler/Scheduler.hpp
+[20.944s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/requester
+[20.944s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/requester/Requester.hpp
+[20.944s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/client
+[20.944s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/client/ProxyClient.hpp
+[20.944s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/client/session
+[20.945s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/client/session/SessionInfo.hpp
+[20.945s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/client/session/Session.hpp
+[20.945s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream
+[20.945s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/InputStream.hpp
+[20.945s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/OutputStream.hpp
+[20.945s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware
+[20.945s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced
+[20.945s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedMiddleware.hpp
+[20.945s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedEntities.hpp
+[20.946s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/Middleware.hpp
+[20.946s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils
+[20.946s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils/Callbacks.hpp
+[20.946s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds
+[20.946s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSEntities.hpp
+[20.946s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSMiddleware.hpp
+[20.946s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast
+[20.946s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastMiddleware.hpp
+[20.946s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastEntities.hpp
+[20.947s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/types
+[20.947s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/types/TopicPubSubType.hpp
+[20.947s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/types/XRCETypes.hpp
+[20.947s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/types/Optional.hpp
+[20.947s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/types/MessageHeader.hpp
+[20.947s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/types/SubMessageHeader.hpp
+[20.947s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/processor
+[20.948s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/processor/Processor.hpp
+[20.948s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/replier
+[20.948s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/replier/Replier.hpp
+[20.948s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/utils
+[20.948s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/utils/ArgumentParser.hpp
+[20.948s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/utils/Color.hpp
+[20.948s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/utils/Time.hpp
+[20.948s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/utils/Conversion.hpp
+[20.949s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/utils/Functions.hpp
+[20.949s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutex.hpp
+[20.949s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutexPriority.hpp
+[20.949s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/utils/TokenBucket.hpp
+[20.949s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/utils/SeqNum.hpp
+[20.949s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/object
+[20.949s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/object/XRCEObject.hpp
+[20.949s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/logger
+[20.949s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/logger/Logger.hpp
+[20.949s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/reader
+[20.949s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/reader/Reader.hpp
+[20.950s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/subscriber
+[20.950s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/subscriber/Subscriber.hpp
+[20.950s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport
+[20.950s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial
+[20.950s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiSerialAgentLinux.hpp
+[20.950s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/TermiosAgentLinux.hpp
+[20.950s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/baud_rate_table_linux.h
+[20.950s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiTermiosAgentLinux.hpp
+[20.950s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/SerialAgentLinux.hpp
+[20.950s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/PseudoTerminalAgentLinux.hpp
+[20.950s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p
+[20.951s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscovererLinux.hpp
+[20.951s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscoverer.hpp
+[20.951s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing
+[20.951s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing/StreamFramingProtocol.hpp
+[20.951s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/TransportRc.hpp
+[20.951s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/can
+[20.951s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/can/CanAgentLinux.hpp
+[20.951s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery
+[20.951s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServer.hpp
+[20.951s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerWindows.hpp
+[20.951s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerLinux.hpp
+[20.952s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/Server.hpp
+[20.952s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/custom
+[20.952s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/custom/CustomAgent.hpp
+[20.952s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint
+[20.952s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CustomEndPoint.hpp
+[20.952s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/MultiSerialEndPoint.hpp
+[20.952s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CanEndPoint.hpp
+[20.952s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv4EndPoint.hpp
+[20.952s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv6EndPoint.hpp
+[20.952s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/SerialEndPoint.hpp
+[20.953s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp
+[20.953s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentLinux.hpp
+[20.953s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentLinux.hpp
+[20.953s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPConnection.hpp
+[20.953s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentWindows.hpp
+[20.953s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentWindows.hpp
+[20.953s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPServerBase.hpp
+[20.953s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/SessionManager.hpp
+[20.953s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/util
+[20.953s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceWindows.hpp
+[20.954s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceLinux.hpp
+[20.954s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/udp
+[20.954s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentLinux.hpp
+[20.954s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentLinux.hpp
+[20.954s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentWindows.hpp
+[20.954s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentWindows.hpp
+[20.954s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/datawriter
+[20.954s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/datawriter/DataWriter.hpp
+[20.954s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/message
+[20.955s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/message/InputMessage.hpp
+[20.955s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/message/OutputMessage.hpp
+[20.955s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/message/Packet.hpp
+[20.955s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/participant
+[20.955s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/participant/Participant.hpp
+[20.955s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/Root.hpp
+[20.955s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/visibility.hpp
+[20.955s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets.cmake
+[20.955s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets-release.cmake
+[20.956s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/include/uxr/agent/config.hpp
+[20.956s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/microxrcedds_agent/LICENSE
+[20.956s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfig.cmake
+[20.956s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfigVersion.cmake
+[20.973s] [ 50%] [34m[1mCompleted 'xrceagent'[0m
+[21.004s] [ 50%] Built target xrceagent
+[21.024s] [ 56%] [34m[1mCreating directories for 'micro_ros_agent'[0m
+[21.089s] [ 62%] [34m[1mNo download step for 'micro_ros_agent'[0m
+[21.111s] [ 68%] [34m[1mNo update step for 'micro_ros_agent'[0m
+[21.132s] [ 75%] [34m[1mNo patch step for 'micro_ros_agent'[0m
+[21.156s] [ 81%] [34m[1mPerforming configure step for 'micro_ros_agent'[0m
+[21.164s] loading initial cache file /home/kk/Desktop/fishbot_ws/build/micro_ros_agent/micro_ros_agent-prefix/tmp/micro_ros_agent-cache-.cmake
+[21.168s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[21.291s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[21.435s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[21.438s] -- Looking for C++ include pthread.h
+[21.518s] -- Looking for C++ include pthread.h - found
+[21.518s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[21.595s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[21.595s] -- Found Threads: TRUE  
+[21.599s] -- Found rosidl_cmake: 3.1.8 (/opt/ros/humble/share/rosidl_cmake/cmake)
+[21.600s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[21.618s] -- Found fastrtps_cmake_module: 2.2.4 (/opt/ros/humble/share/fastrtps_cmake_module/cmake)
+[21.620s] -- Found rmw_dds_common: 1.6.0 (/opt/ros/humble/share/rmw_dds_common/cmake)
+[21.641s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[21.647s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[21.653s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[21.662s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[21.678s] -- Found rmw_fastrtps_shared_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_shared_cpp/cmake)
+[21.723s] -- Found FastRTPS: /opt/ros/humble/include  
+[21.724s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[21.726s] -- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[21.726s] -- Found micro_ros_msgs: 3.0.1 (/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake)
+[21.782s] -- Configuring done
+[21.790s] -- Generating done
+[21.792s] -- Build files have been written to: /home/kk/Desktop/fishbot_ws/build/micro_ros_agent
+[21.815s] [ 87%] [34m[1mPerforming build step for 'micro_ros_agent'[0m
+[21.854s] [ 66%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_typesupport.cpp.o[0m
+[21.854s] [ 66%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/utils/demangle.cpp.o[0m
+[21.854s] [ 66%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/Agent.cpp.o[0m
+[21.854s] [ 66%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/main.cpp.o[0m
+[21.855s] [ 83%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_manager.cpp.o[0m
+[24.691s] [100%] [32m[1mLinking CXX executable micro_ros_agent[0m
+[24.967s] [100%] Built target micro_ros_agent
+[24.989s] [34m[1mNo install step for 'micro_ros_agent'[0m
+[25.012s] [34m[1mCompleted 'micro_ros_agent'[0m
+[25.039s] Built target micro_ros_agent
+[25.051s] Invoked command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kk/Desktop/fishbot_ws/build/micro_ros_agent -- -j16 -l16
+[25.052s] Invoking command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kk/Desktop/fishbot_ws/build/micro_ros_agent
+[25.060s] -- Install configuration: ""
+[25.060s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/ament_index/resource_index/package_run_dependencies/micro_ros_agent
+[25.060s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/ament_index/resource_index/parent_prefix_path/micro_ros_agent
+[25.060s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.sh
+[25.060s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.dsv
+[25.060s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/environment/path.sh
+[25.060s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/environment/path.dsv
+[25.061s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.bash
+[25.061s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.sh
+[25.061s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.zsh
+[25.061s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.dsv
+[25.062s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv
+[25.062s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/ament_index/resource_index/packages/micro_ros_agent
+[25.062s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.062s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig.cmake
+[25.062s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig-version.cmake
+[25.062s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/package.xml
+[25.063s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent
+[25.064s] -- Set runtime path of "/home/kk/Desktop/fishbot_ws/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent" to ""
+[25.064s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/launch
+[25.065s] -- Installing: /home/kk/Desktop/fishbot_ws/install/micro_ros_agent/share/micro_ros_agent/launch/micro_ros_agent_launch.py
+[25.067s] Invoked command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kk/Desktop/fishbot_ws/build/micro_ros_agent

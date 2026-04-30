@@ -1,0 +1,6 @@
+Invoking command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kk/Desktop/fishbot_ws/src/micro_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs
+Invoked command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kk/Desktop/fishbot_ws/src/micro_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/kk/Desktop/fishbot_ws/install/micro_ros_msgs
+Invoking command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kk/Desktop/fishbot_ws/build/micro_ros_msgs -- -j16 -l16
+Invoked command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kk/Desktop/fishbot_ws/build/micro_ros_msgs -- -j16 -l16
+Invoking command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kk/Desktop/fishbot_ws/build/micro_ros_msgs
+Invoked command in '/home/kk/Desktop/fishbot_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kk/Desktop/fishbot_ws/build/micro_ros_msgs
