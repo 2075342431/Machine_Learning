@@ -100,7 +100,7 @@ def main():
                     # 3. 握拳判定逻辑 (优化阈值)
                     # 张开手通常 ratio > 1.8，握拳通常 ratio < 1.3
                     OPEN_LIMIT = 1.8
-                    CLOSE_LIMIT = 1.2
+                    CLOSE_LIMIT = 0.7
                     
                     if ratio >= OPEN_LIMIT:
                         fist_degree = 0.0
