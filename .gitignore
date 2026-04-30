@@ -1,2 +1,15 @@
 **/data/
 
+**/logs/
+**/cache/
+**/tmp/
+**/node_modules/
+**/vendor/
+**/.env
+**/.DS_Store
+
+
+#platform
+**/.pio/
+**/.vscode/
+**/include/
