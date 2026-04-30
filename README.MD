@@ -29,27 +29,6 @@
    - 支持抛弃中间件 (MediaPipe)，直接使用轻量级卷积神经网络 (**ResNet18**) 将原始摄像头像素翻译为 3 个关节角度。
    - 实现了从图像输入到电机控制信号的端到端推理。
 
-## 📂 目录结构 (Directory Structure)
-
-```text
-Machine_Learning/
-├── arm/                  # ESP32 下位机固件 (PlatformIO)
-│   ├── src/main.cpp      # 高速串口通信与伺服控制逻辑
-│   └── lib/RobotArm/     # 机械臂底层驱动库 (SCServo / ESP32Servo)
-├── scripts/              # Python 运行脚本
-│   ├── collect_data.py   # 基于 MediaPipe 的低延迟数据采集器
-│   ├── test_serial.py    # 串口通信测试脚本
-│   ├── camera_node.py    # [Phase 4] ROS2 摄像头发布节点
-│   └── ai_inference_node.py # [Phase 4] ROS2 AI 推理节点
-├── train/                # 机器学习训练模块 (PyTorch)
-│   ├── dataset.py        # Dataset 类与图像预处理
-│   └── train.py          # ResNet18 模型训练与评估脚本
-├── data/                 # 数据存储目录 (已在 .gitignore 中忽略)
-│   ├── raw/              # 原始采集图片
-│   └── processed/        # 预处理后的数据集
-└── models/               # 训练生成的模型权重 (已在 .gitignore 中忽略)
-    └── best_model.pth    # 最佳模型权重
-  
 ## 🛠️ 技术栈 (Tech Stack)
 
 | 类别 | 技术/工具 |
@@ -70,3 +49,33 @@ Machine_Learning/
 
 ```bash
 pip install opencv-python mediapipe torch torchvision numpy pyserial
+
+pip install -r requirements.txt
+```
+## 📂 目录结构 (Directory Structure)
+
+```text
+Machine_Learning/
+├── arm/                  # ESP32 下位机固件 (PlatformIO)
+│   ├── src/main.cpp      # 高速串口通信与伺服控制逻辑
+│   └── lib/RobotArm/     # 机械臂底层驱动库 (SCServo / ESP32Servo)
+├── scripts/              # Python 运行脚本
+│   ├── collect_data.py   # 基于 MediaPipe 的低延迟数据采集器
+│   ├── test_serial.py    # 串口通信测试脚本
+│   ├── camera_node.py    # [Phase 4] ROS2 摄像头发布节点
+│   └── ai_inference_node.py # [Phase 4] ROS2 AI 推理节点
+├── train/                # 机器学习训练模块 (PyTorch)
+│   ├── dataset.py        # Dataset 类与图像预处理
+│   └── train.py          # ResNet18 模型训练与评估脚本
+├── data/                 # 数据存储目录 (已在 .gitignore 中忽略)
+│   ├── raw/              # 原始采集图片
+│   └── processed/        # 预处理后的数据集
+└── models/               # 训练生成的模型权重 (已在 .gitignore 中忽略)
+    └── best_model.pth    # 最佳模型权重
+
+
+
+
+
+
+  
