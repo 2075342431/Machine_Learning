@@ -13,3 +13,20 @@
 **/.pio/
 **/.vscode/
 **/include/
+
+build/
+install/
+log/
+*.pyc
+__pycache__/
+
+# 模型/数据缓存
+*.onnx.data
+*.onnx
+
+# 系统文件
+.DS_Store
+.vscode/
+.idea/
+EOF
+
