@@ -1,80 +1,63 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torchvision import models
-from dataset import get_dataloader
-import os
+import pandas as pd
+from torch.utils.data import DataLoader, TensorDataset
+import numpy as np
 
-# --- 配置区 ---
-DATA_DIR = '/home/kk/Desktop/Machine_Learning/data'
-CSV_FILE = os.path.join(DATA_DIR, 'labels.csv')
-IMG_DIR = os.path.join(DATA_DIR, 'images')
-MODEL_SAVE_PATH = '/home/kk/Desktop/Machine_Learning/train/best_model.pth'
+# 1. 定义极其轻量的 MLP 网络
+class FistNet(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(63, 64),   # 输入层：63个坐标特征
+            nn.ReLU(),           # 激活函数
+            nn.Linear(64, 32),   # 隐藏层
+            nn.ReLU(),
+            nn.Linear(32, 1),    # 输出层：1个值
+            nn.Sigmoid()         # 极其关键：将输出强行压缩到 0.0 到 1.0 之间
+        )
 
-BATCH_SIZE = 32
-EPOCHS = 20
-LEARNING_RATE = 0.001
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    def forward(self, x):
+        return self.net(x)
 
+# 2. 加载数据
+def load_data(csv_path):
+    df = pd.read_csv(csv_path, header=0)
+    features = df.iloc[:, :63].values.astype(np.float32) # 前63列是坐标
+    labels = df.iloc[:, 63].values.astype(np.float32).reshape(-1, 1) # 最后一列是标签
+    
+    dataset = TensorDataset(torch.tensor(features), torch.tensor(labels))
+    return DataLoader(dataset, batch_size=32, shuffle=True)
+
+# 3. 训练脚本
 def train():
-    # 1. 准备数据
-    if not os.path.exists(CSV_FILE):
-        print(f"Error: CSV file not found at {CSV_FILE}. Please collect data first.")
-        return
-
-    train_loader = get_dataloader(CSV_FILE, IMG_DIR, batch_size=BATCH_SIZE, train=True)
-    val_loader = get_dataloader(CSV_FILE, IMG_DIR, batch_size=BATCH_SIZE, train=False)
-
-    # 2. 定义模型 (ResNet18)
-    model = models.resnet18(weights=None) # 不使用预训练权重，从头训练
-    num_ftrs = model.fc.in_features
-    model.fc = nn.Linear(num_ftrs, 3) # 修改输出层为 3 维角度
-    model = model.to(DEVICE)
-
-    # 3. 损失函数与优化器
-    criterion = nn.MSELoss()
-    optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
-
-    # 4. 训练循环
-    best_val_loss = float('inf')
-
-    print(f"Starting training on {DEVICE}...")
-    for epoch in range(EPOCHS):
-        model.train()
-        train_loss = 0.0
-        for images, labels in train_loader:
-            images, labels = images.to(DEVICE), labels.to(DEVICE)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model = FistNet().to(device)
+    criterion = nn.MSELoss() # 均方误差
+    optimizer = optim.Adam(model.parameters(), lr=0.01) # 学习率可以稍微大点
+    
+    loader = load_data("/home/kk/Desktop/Machine_Learning/scripts/hand_gestures.csv") # 替换为你的数据路径
+    
+    print("开始训练...")
+    for epoch in range(50): # 这种小网络 50 轮就足够收敛了
+        total_loss = 0
+        for batch_features, batch_labels in loader:
+            batch_features, batch_labels = batch_features.to(device), batch_labels.to(device)
             
             optimizer.zero_grad()
-            outputs = model(images)
-            loss = criterion(outputs, labels)
+            outputs = model(batch_features)
+            loss = criterion(outputs, batch_labels)
             loss.backward()
             optimizer.step()
             
-            train_loss += loss.item() * images.size(0)
-
-        # 验证
-        model.eval()
-        val_loss = 0.0
-        with torch.no_grad():
-            for images, labels in val_loader:
-                images, labels = images.to(DEVICE), labels.to(DEVICE)
-                outputs = model(images)
-                loss = criterion(outputs, labels)
-                val_loss += loss.item() * images.size(0)
-
-        avg_train_loss = train_loss / len(train_loader.dataset)
-        avg_val_loss = val_loss / len(val_loader.dataset)
-
-        print(f"Epoch [{epoch+1}/{EPOCHS}] - Train Loss: {avg_train_loss:.4f}, Val Loss: {avg_val_loss:.4f}")
-
-        # 保存最优模型
-        if avg_val_loss < best_val_loss:
-            best_val_loss = avg_val_loss
-            torch.save(model.state_dict(), MODEL_SAVE_PATH)
-            print(f"--> Saved best model with loss {best_val_loss:.4f}")
-
-    print("Training Complete.")
+            total_loss += loss.item()
+            
+        if (epoch+1) % 10 == 0:
+            print(f"Epoch {epoch+1}/50, Loss: {total_loss/len(loader):.4f}")
+            
+    torch.save(model.state_dict(), "fist_model.pth")
+    print("模型已保存为 fist_model.pth")
 
 if __name__ == "__main__":
     train()
