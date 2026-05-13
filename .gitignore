@@ -16,3 +16,10 @@
 
 
 train/**/
+
+**/build/
+**/dist/
+**/out/
+**/target/
+**/install/
+**/log/
